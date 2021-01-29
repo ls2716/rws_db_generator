@@ -1,0 +1,14 @@
+<html>
+<head></head>
+<body>
+<h3>Word View for {{ query }} </h3>
+{% for q in result %}
+   <p>
+    <b> {{ q }} </b> </br>
+    {{ q.labels }} </br>
+    {{ q.basemeaning }} </br>
+    {{ q.basemeaning.text }}
+   </p>
+{% endfor %}
+</body>
+</html>

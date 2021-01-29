@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<h3>Meaning View for {{ query }} </h3>
+{% for m, words in meanings.items %}
+   <p>
+    <b> {{ m }} </b> </br>
+    {% for q in words %}
+      {% if forloop.counter0 == 0 %}
+         {{ q.basemeaning.part_of_speech }} </br>
+         {{ q.basemeaning.text }} </br>
+         <ul>
+      {% endif %}
+      <li> {{ q.labels }} </li>
+
+    {% endfor %}
+    </ul>
+   </p>
+{% endfor %}
+</body>
+</html>
