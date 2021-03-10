@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import BaseMeaning, Person, Word
+from .models import BaseMeaning, Word
 # Register your models here.
-admin.site.register(Person)
 admin.site.register(Word)
 admin.site.register(BaseMeaning)
